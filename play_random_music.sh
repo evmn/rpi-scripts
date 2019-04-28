@@ -5,7 +5,7 @@ echo "$dir"
 
 if [ ! -f "$dir/lists" ]
 then
-	find "$dir" -name *.mp3 > lists
+	find "$dir" -name *.mp3 > "$dir/lists"
 fi
 
 for i in {01..05}
