@@ -23,5 +23,5 @@ echo ""
 echo "$k/$n: start at $h hour $m minute"
 
 omxplayer -l $h:$m:0 --vol 600 "${audio_file}" &
-sleep 80s
+sleep ${length}m
 kill $(pgrep omxplayer)
