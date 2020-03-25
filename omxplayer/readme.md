@@ -8,7 +8,9 @@ Add the following setting in you crontab:
 
 >0 6 * * * /home/pi/bin/audiobook.sh
 
+## Play Very Long Audio File
 
+With `long_audio.sh`, you can play very long audio file for half a hour every time until you finish it.
 
 ## Options available during playback
 
