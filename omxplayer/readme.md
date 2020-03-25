@@ -1,3 +1,15 @@
+# Omxplayer Scripts
+
+## Audiobook Auto Player
+
+If you want to play chapter one(one audio file) of a audiobook at 6 a.m on the first day, and play chapter two/three on the second/third day and so on, after last chapter it will loop back, you  can use `audiobook.sh`.
+
+Add the following setting in you crontab:
+
+>0 6 * * * /home/pi/bin/audiobook.sh
+
+
+
 ## Options available during playback
 
 There are a number of options available during playback, actioned by pressing the appropriate key. Not all options will be available on all files. The list of key bindings can be displayed using `omxplayer --keys`:
@@ -97,3 +109,7 @@ This is a full list of options available in the build from 23rd September 2016, 
  --avdict 'opts'         Options passed to demuxer, e.g., 'rtsp_transport:tcp,...'
 
 ```
+
+## Reference
+
+ - [OMXPlayer: An accelerated command line media player](https://www.raspberrypi.org/documentation/raspbian/applications/omxplayer.md)
